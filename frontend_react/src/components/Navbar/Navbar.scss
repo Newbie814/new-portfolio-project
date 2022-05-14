@@ -1,12 +1,12 @@
 .app__navbar {
   width: 100%;
-
+  background-color: rgb(6, 50, 81, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding: 1rem 2rem;
-  background-color: rgb(197, 229, 252, 0.1);
+  // background-color: rgb(197, 229, 252, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgb(197, 229, 252, 0.05);
@@ -29,7 +29,7 @@
 }
 
 .app__navbar-links {
-  // flex: 1;  //double check this, not sure which i like better
+  flex: 1; //double check this, not sure which i like better
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +109,6 @@
     align-items: flex-end;
     flex-direction: column;
 
-    // background: url('../../assets/bgWhite.png');
     background-color: var(--clr-primary-10);
     background-size: cover;
     background-repeat: repeat;

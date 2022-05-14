@@ -6,6 +6,7 @@ import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import flutter from '../assets/flutter.png';
+import js from '../assets/js.png';
 import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
@@ -14,6 +15,7 @@ import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
+import react2 from '../assets/react2.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
@@ -27,6 +29,7 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import celtic from '../assets/celtic.svg';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -47,11 +50,13 @@ export default {
   git,
   graphql,
   html,
+  js,
   javascript,
   mu5,
   node,
   python,
   react,
+  react2,
   redux,
   sass,
   typescript,
@@ -62,6 +67,7 @@ export default {
   about04,
   profile,
   circle,
+  celtic,
   logo,
   adidas,
   amazon,

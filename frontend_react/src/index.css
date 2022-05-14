@@ -3,8 +3,8 @@
 :root {
   --font-base: 'DM Sans', sans-serif;
 
-  --primary-color: hsl(205, 86%, 17%);
-  --secondary-color: hsl(205, 90%, 76%);
+  --primary-color: rgb(6, 50, 81);
+  --secondary-color: #8bcbf9;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
@@ -24,16 +24,16 @@
   --clr-primary-9: rgb(197, 229, 252);
   --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: #102a42;
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-7: #9eb2c7;
+  --clr-grey-8: #bcccdc;
+  --clr-grey-9: #dae2ec;
   --clr-grey-10: hsl(210, 36%, 96%);
 }
 
