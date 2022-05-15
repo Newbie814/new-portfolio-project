@@ -4,41 +4,24 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 
 import './About.scss';
-
-const abouts = [
-  {
-    title: 'Web Development',
-    description:
-      'I create web applications to get the most out of your business.',
-    imgUrl: images.about01,
-  },
-  {
-    title: 'JavaScript',
-    description: 'Making your web presence work for your customers and you.',
-    imgUrl: images.about02,
-  },
-  {
-    title: 'Problem Solving',
-    description: 'Everything comes down to solving problems',
-    imgUrl: images.about03,
-  },
-  {
-    title: 'React',
-    description:
-      'Using modern and efficient tools to build your online presence.',
-    imgUrl: images.about04,
-  },
-];
+import { urlFor, client } from '../../client';
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
+
   return (
     <>
       <h2 className='head-text'>
-        I know that
-        <span>Web Development</span>
-        <br />
-        Really means
-        <span>Problem Solving</span>
+        I know that <span>Web Development</span>
+        <br /> Really means <span>Problem Solving</span>
       </h2>
 
       <div className='app__profiles'>
@@ -50,7 +33,7 @@ const About = () => {
             className='app__profile-item'
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className='bold-text' style={{ marginTop: 20 }}>
               {about.title}
             </h2>
