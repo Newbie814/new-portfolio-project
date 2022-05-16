@@ -5,13 +5,19 @@ import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 const SocialMedia = () => (
   <div className='app__social'>
     <div>
-      <FaGithub />
+      <a href='https://github.com/Newbie814'>
+        <FaGithub />
+      </a>
     </div>
     <div>
-      <FaLinkedin />
+      <a href='https://www.linkedin.com/in/matthewoodard/'>
+        <FaLinkedin />
+      </a>
     </div>
     <div>
-      <FaFacebookF />
+      <a href='https://www.facebook.com/matt.woodard.9849'>
+        <FaFacebookF />
+      </a>
     </div>
   </div>
 );
