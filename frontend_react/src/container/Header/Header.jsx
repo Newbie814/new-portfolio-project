@@ -1,8 +1,9 @@
 import React from 'react';
 
-// import { AppWrap } from '../../wrapper';
+import { AppWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 import './Header.scss';
 
@@ -19,7 +20,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id='home' className='app__header app__flex'>
+    <div className='app__header app__flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
@@ -31,6 +32,10 @@ const Header = () => {
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hi, I'm</p>
               <h1 className='head-text'>Matt</h1>
+              <small>
+                (the hairy faced one)
+                <FaLongArrowAltRight />
+              </small>
             </div>
           </div>
           <div className='tag-cmp app__flex'>
@@ -69,4 +74,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header, 'home');
