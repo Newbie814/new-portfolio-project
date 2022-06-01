@@ -52,6 +52,8 @@ const Work = () => {
           'JavaScript',
           'ReactJS',
           'React Native',
+          'C#',
+          '.NET',
         ].map((item, index) => (
           <div
             key={index}
