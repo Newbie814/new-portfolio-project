@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
+import { ContactUs } from '../../components/ContactForm';
 
 import './Footer.scss';
 
@@ -59,7 +60,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      {!isFormSubmitted ? (
+      {/* {!isFormSubmitted ? (
         <div className='app__footer-form app__flex'>
           <div className='app__flex'>
             <input
@@ -94,6 +95,13 @@ const Footer = () => {
             {!loading ? 'Send Message' : 'Sending...'}
           </button>
         </div>
+      ) : (
+        <div>
+          <h3 className='head-text'>Thank you for getting in touch!</h3>
+        </div>
+      )} */}
+      {!isFormSubmitted ? (
+        <ContactUs />
       ) : (
         <div>
           <h3 className='head-text'>Thank you for getting in touch!</h3>
