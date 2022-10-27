@@ -7,8 +7,6 @@ const REACT_APP_YOUR_TEMPLATE_ID = process.env.REACT_APP_YOUR_TEMPLATE_ID;
 
 const REACT_APP_YOUR_PUBLIC_KEY = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
-console.log('REACT_YOUR_SERVICE_ID', REACT_APP_YOUR_SERVICE_ID);
-
 export const ContactUs = () => {
   const form = useRef();
 
