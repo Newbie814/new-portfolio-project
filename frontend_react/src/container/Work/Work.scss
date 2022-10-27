@@ -136,6 +136,10 @@
       color: var(--white-color);
     }
   }
+
+  @media screen and (max-width: 400px) {
+    opacity: 1;
+  }
 }
 
 .app__work-content {
